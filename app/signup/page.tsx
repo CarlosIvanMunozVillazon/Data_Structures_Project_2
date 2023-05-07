@@ -9,19 +9,21 @@ import CssBaseline from "@mui/material/CssBaseline"
 import Image from "next/image"
 import AppBar from "@mui/material/AppBar"
 import SingUp from './singup-components/SingUp'
+import NavBar from './singup-components/NavBar'
 
 export default function Register() {
     return (
         <>
+            <NavBar></NavBar>
+
             <Grid container component="main" display="flex" flexDirection="column" alignItems="center">
 
-                <SingUp></SingUp>
+                <Box sx={{ m: 17 }}>
+                    <SingUp></SingUp>
+                </Box>
 
             </Grid>
-
-
-
-
+            
         </>
     )
 }
